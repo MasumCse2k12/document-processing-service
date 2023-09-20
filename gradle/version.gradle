@@ -1,0 +1,40 @@
+ext.version = [
+        springBoot : [
+                web : '2.5.4',
+                validation: '2.5.4',
+                actuator : '2.5.4',
+                undertow : '2.5.4',
+                jpa : '2.5.4',
+                redis : '2.5.4',
+                thymeleaf : '2.5.4'
+        ],
+//        kafkaStreams : '2.7.1',
+//        springKafka : '2.7.6',
+        postgresql : '42.3.1',
+        hikariCP : '3.4.5',
+        javaxValidation : '2.0.1.Final',
+        hibernateValidator: '7.0.1.Final',
+        hibernateTypes : '2.21.1',
+//        jsonWebToken : '0.9.1',
+        commonsLang3 : '3.12.0',
+        springdoc : '1.5.12',
+        swagger : '3.0.0',
+        jackson : '2.13.0',
+        lombok : '1.18.22',
+        javaee : '7.0',
+        commonFileUpload : '1.4',
+        commonsMath3 : '3.6.1',
+        springFramework : [
+                springExpression: '5.3.8',
+                springWeb : '5.3.9'
+        ],
+//        javaFaker : '1.0.2',
+        poi_ooxml : '4.1.2',
+        testSet : [
+                jUnit : '5.7.2',
+                h2 : '2.1.214',
+                test : '2.5.4',
+                mockito: '4.8.0',
+                assertj: '3.6.1',
+        ]
+]

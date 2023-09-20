@@ -1,0 +1,45 @@
+
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+version = '1.0'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+	implementation.exclude module: 'tomcat-jdbc'
+	implementation.exclude module: 'spring-boot-starter-tomcat'
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	implementation libraries.springBoot
+	implementation libraries.postgresql
+	implementation libraries.hikariCP
+	implementation libraries.javaxValidation
+	implementation libraries.hibernateValidator
+	implementation libraries.commonsLang3
+	implementation libraries.springdoc
+	implementation libraries.poi_ooxml
+
+	implementation libraries.lombok
+	annotationProcessor libraries.lombok
+	testImplementation libraries.testSet
+}
+
+springBoot {
+	buildInfo()
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
