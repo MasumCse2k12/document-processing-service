@@ -52,8 +52,8 @@ Before you can run this application, you need to have the following installed on
 ### Reference Documentation
 For further reference, please consider the following sections:
 
-* [Official Apache Maven documentation](https://docs.gradle.org/current/samples/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.5.4/gradle-plugin/api/)
+* [Official Apache Gradle documentation] (https://docs.gradle.org/current/samples/index.html)
+* [Spring Boot GRadle Plugin Reference Guide]  (https://docs.spring.io/spring-boot/docs/2.5.4/gradle-plugin/api/)
 * [CSV File Batch Processing] (https://ademola-kazeem.medium.com/how-to-process-large-csv-file-with-spring-batch-cd3ed8f21d09)
 * [Spring Batch] (https://medium.com/@devalerek/spring-batch-retrieve-data-from-the-csv-file-and-save-it-to-database-h2-75a689b7370)
 
