@@ -21,10 +21,7 @@ ext.libraries = [
 				"org.springframework.boot:spring-boot-starter-actuator:$version.springBoot.actuator",
 				"org.springframework.boot:spring-boot-starter-undertow:$version.springBoot.undertow",
 				"org.springframework.boot:spring-boot-starter-data-jpa:$version.springBoot.jpa"
-//				"org.springframework.boot:spring-boot-starter-data-redis:$version.springBoot.redis"
 		],
-//		kafkaStreams : "org.apache.kafka:kafka-streams:$version.kafkaStreams",
-//		springKafka : "org.springframework.kafka:spring-kafka:$version.springKafka",
 		postgresql : "org.postgresql:postgresql:$version.postgresql",
 		hikariCP : "com.zaxxer:HikariCP:$version.hikariCP",
 		springBatch : "org.springframework.boot:spring-boot-starter-batch:$version.springBatch",
@@ -33,11 +30,6 @@ ext.libraries = [
 		commonsLang3 : "org.apache.commons:commons-lang3:$version.commonsLang3",
 		springdoc : "org.springdoc:springdoc-openapi-ui:$version.springdoc",
 		swagger : "io.springfox:springfox-swagger2:$version.swagger",
-		jackson : [
-				"com.fasterxml.jackson.core:jackson-annotations:$version.jackson",
-				"com.fasterxml.jackson.core:jackson-core:$version.jackson",
-				"com.fasterxml.jackson.core:jackson-databind:$version.jackson"
-		],
 		lombok : "org.projectlombok:lombok:$version.lombok",
 		jUnit : "org.junit.jupiter:junit-jupiter:$version.jUnit",
 		testSet : [
@@ -47,16 +39,12 @@ ext.libraries = [
 				"org.springframework.boot:spring-boot-starter-test:$version.testSet.test",
 				"org.assertj:assertj-core:$version.testSet.assertj",
 		],
-//		commonFileUpload : "commons-fileupload:commons-fileupload:$version.commonFileUpload",
-//		javaee : "javax:javaee-api:$version.javaee",
-//		commonsMath3 : "org.apache.commons:commons-math3:$version.commonsMath3",
 		commonsLang3 : "org.apache.commons:commons-lang3:$version.commonsLang3",
 		openCsv: "com.opencsv:opencsv:$version.openCsv",
 		springFramework : [
 				"org.springframework:spring-expression:$version.springFramework.springExpression",
 				"org.springframework:spring-web:$version.springFramework.springWeb"
 		],
-//		javaFaker : "com.github.javafaker:javafaker:$version.javaFaker",
 		poi_ooxml : "org.apache.poi:poi-ooxml:$version.poi_ooxml",
 		springTest : "org.springframework.boot:spring-boot-starter-test:$version.testSet.test"
 ]
