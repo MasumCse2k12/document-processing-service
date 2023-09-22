@@ -1,5 +1,17 @@
+
 # document-processing-service
 
+# Requirements:
+- Jdk 8
+- Gradle: https://gradle.org/
+
+# Getting Started
+- Inside "src/main/resources/application.properties" please update server, port, postgres server, user+password credentials
+- Then write the following commands to compile it on your pc.
+- gradle clean
+- gradle build -x test (It will create war/jar file under build/libs folder)
+
+- 
 pring Boot CSV Batch Processor
 Spring Boot
 Java
