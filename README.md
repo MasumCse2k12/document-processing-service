@@ -1,5 +1,5 @@
 
-# document-processing-service
+# Document-processing-service
 
 ### Table of Contents
 - Prerequisites
