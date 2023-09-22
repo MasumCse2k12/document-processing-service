@@ -30,6 +30,8 @@ dependencies {
 	implementation libraries.commonsLang3
 	implementation libraries.springdoc
 	implementation libraries.poi_ooxml
+	implementation libraries.openCsv
+	implementation libraries.springBatch
 
 	implementation libraries.lombok
 	annotationProcessor libraries.lombok

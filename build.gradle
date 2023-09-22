@@ -27,6 +27,7 @@ ext.libraries = [
 //		springKafka : "org.springframework.kafka:spring-kafka:$version.springKafka",
 		postgresql : "org.postgresql:postgresql:$version.postgresql",
 		hikariCP : "com.zaxxer:HikariCP:$version.hikariCP",
+		springBatch : "org.springframework.boot:spring-boot-starter-batch:$version.springBatch",
 		javaxValidation : "javax.validation:validation-api:$version.javaxValidation",
 		hibernateValidator: "org.hibernate:hibernate-validator:$version.hibernateValidator",
 		commonsLang3 : "org.apache.commons:commons-lang3:$version.commonsLang3",
@@ -49,6 +50,8 @@ ext.libraries = [
 //		commonFileUpload : "commons-fileupload:commons-fileupload:$version.commonFileUpload",
 //		javaee : "javax:javaee-api:$version.javaee",
 //		commonsMath3 : "org.apache.commons:commons-math3:$version.commonsMath3",
+		commonsLang3 : "org.apache.commons:commons-lang3:$version.commonsLang3",
+		openCsv: "com.opencsv:opencsv:$version.openCsv",
 		springFramework : [
 				"org.springframework:spring-expression:$version.springFramework.springExpression",
 				"org.springframework:spring-web:$version.springFramework.springWeb"
