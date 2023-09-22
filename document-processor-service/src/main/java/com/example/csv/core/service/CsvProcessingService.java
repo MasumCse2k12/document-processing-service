@@ -5,7 +5,7 @@ import com.example.csv.core.entities.TempLead;
 import com.example.csv.core.repository.BatchJobRepository;
 import com.example.csv.core.repository.LeadRepository;
 import com.example.csv.core.repository.TempLeadRepository;
-import com.example.csv.endpoints.TempLeadDto;
+import com.example.csv.core.dto.TempLeadDto;
 import com.example.csv.endpoints.request.JobStatusRequest;
 import com.example.csv.endpoints.response.FileUploadResponse;
 import com.example.csv.endpoints.response.JobStatusResponse;
@@ -26,7 +26,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.validation.Validator;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
@@ -42,9 +41,6 @@ public class CsvProcessingService {
     private final BatchJobRepository batchJobRepository;
     private final LeadRepository leadRepository;
     private final TempLeadRepository tempLeadRepository;
-
-    @Autowired
-    private Validator validator;
 
     @Qualifier("asyncJobLauncherLead")
     @Autowired
@@ -93,7 +89,7 @@ public class CsvProcessingService {
 
             BatchJob batchJob = BatchJob.builder()
                     .jobId(jobExecution.getJobId() != null ? jobExecution.getJobId().intValue() : null)
-                    .sourceType(0) // todo: 0-> file csv
+                    .sourceType(0) //  0-> file csv
                     .userDataSource(file.getOriginalFilename())
                     .build();
 

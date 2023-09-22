@@ -9,7 +9,8 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Lead {
-    long id;
+    Integer id;
+    Integer jobId;
     String email;
     String phone;
 }

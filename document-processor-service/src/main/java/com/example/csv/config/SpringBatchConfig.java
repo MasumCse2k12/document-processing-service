@@ -2,8 +2,9 @@ package com.example.csv.config;
 
 import com.example.csv.core.entities.Lead;
 import com.example.csv.core.entities.TempLead;
-import com.example.csv.endpoints.TempLeadDto;
+import com.example.csv.core.dto.TempLeadDto;
 import com.example.csv.util.BatchConstants;
+import com.example.csv.util.Constants;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -102,7 +103,7 @@ public class SpringBatchConfig {
         log.debug("LEAD JOB starting...");
 
         Step stepLoadFile = stepBuilderFactory.get(BatchConstants.LEAD_STEP_LOAD_FILE)
-                .<TempLeadDto, TempLead>chunk(10000)
+                .<TempLeadDto, TempLead>chunk(Constants.CHUNK_SIZE)
                 .reader(leadFileItemReader)
                 .processor(leadItemProcessor)
                 .writer(leadItemWriter)
@@ -128,7 +129,6 @@ public class SpringBatchConfig {
     public FlatFileItemReader<TempLeadDto> leadFileItemReader(@Value("#{jobParameters[csvPath]}") String pathToFile) {
 
         try {
-
 
             log.info("Reading flat file lead....................................................................................");
             FlatFileItemReader<TempLeadDto> flatFileItemReader = new FlatFileItemReader<>();

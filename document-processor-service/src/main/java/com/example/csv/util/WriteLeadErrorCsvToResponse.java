@@ -1,7 +1,7 @@
 package com.example.csv.util;
 
 import com.example.csv.core.entities.TempLead;
-import com.example.csv.endpoints.TempLeadDto;
+import com.example.csv.core.dto.TempLeadDto;
 import com.opencsv.CSVWriter;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.StatefulBeanToCsv;

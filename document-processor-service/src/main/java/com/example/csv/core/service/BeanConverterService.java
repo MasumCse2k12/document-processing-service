@@ -2,7 +2,7 @@ package com.example.csv.core.service;
 
 import com.example.csv.core.entities.Lead;
 import com.example.csv.core.entities.TempLead;
-import com.example.csv.endpoints.TempLeadDto;
+import com.example.csv.core.dto.TempLeadDto;
 import com.example.csv.util.ValidationUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.tuple.ImmutablePair;

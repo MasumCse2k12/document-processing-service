@@ -1,4 +1,4 @@
-package com.example.csv.endpoints;
+package com.example.csv.core.dto;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

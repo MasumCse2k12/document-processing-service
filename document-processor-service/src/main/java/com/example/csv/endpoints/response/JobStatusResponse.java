@@ -1,6 +1,6 @@
 package com.example.csv.endpoints.response;
 
-import com.example.csv.endpoints.TempLeadDto;
+import com.example.csv.core.dto.TempLeadDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

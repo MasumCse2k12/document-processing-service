@@ -4,6 +4,7 @@ public interface Constants {
 
     String CSV_TYPE = "text/csv";
     Integer BULK_SIZE = 1000; // change as per requirements
+    Integer CHUNK_SIZE = 10000; // change as per requirements
     String VALID = "VALID";
 
     interface TABLE {

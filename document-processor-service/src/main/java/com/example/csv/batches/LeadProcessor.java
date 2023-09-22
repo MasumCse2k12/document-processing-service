@@ -60,7 +60,7 @@ public class LeadProcessor implements ItemProcessor<TempLead, Lead> {
 
             if (errors.size() == 0) {
 
-                // todo insert data
+                // insert data
                 Lead lead = tempResponse.getKey(); //new Lead();
 
 
@@ -78,7 +78,7 @@ public class LeadProcessor implements ItemProcessor<TempLead, Lead> {
             }
         } catch (Exception x) {
             log.error(x.getMessage());
-            // todo write record to error table
+            // write record to error table
             ErrorLead err = ErrorLead.builder()
                     .data(item.toString())
                     .errorDescription(x.getMessage())

@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 
 @SpringBootTest
-class CsvApplicationTests {
+class CsvServiceTests {
 
     @Autowired
     CsvProcessingService csvProcessingService;
