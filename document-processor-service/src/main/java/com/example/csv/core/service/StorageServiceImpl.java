@@ -26,10 +26,12 @@ import java.util.stream.Stream;
 public class StorageServiceImpl implements StorageService {
 
     private final Path rootLocation;
+    private final StorageProperties storageProperties;
 
     @Autowired
-    public StorageServiceImpl(StorageProperties properties) {
-        this.rootLocation = Paths.get(properties.getLocation());
+    public StorageServiceImpl(StorageProperties storageProperties) {
+        this.storageProperties = storageProperties;
+        this.rootLocation = Paths.get(storageProperties.getLocation());
     }
 
     @Override

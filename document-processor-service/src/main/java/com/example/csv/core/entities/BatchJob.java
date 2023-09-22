@@ -18,11 +18,11 @@ import javax.persistence.Table;
 public class BatchJob extends BaseEntity {
 
     @Column(name = "job_id")
-    Long jobId;
+    Integer jobId;
     @Column(name = "job_name")
-    Long jobName;
+    String jobName;
     @Column(name = "source_type")
-    Long sourceType;
+    Integer sourceType;
     @Column(name = "data_source")
     String dataSource;
     @Column(name = "user_data_source")

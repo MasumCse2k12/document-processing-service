@@ -92,8 +92,8 @@ public class CsvProcessingService {
             log.info("LEAD JobExecution status : {} ", jobExecution.getStatus());
 
             BatchJob batchJob = BatchJob.builder()
-                    .jobId(jobExecution.getJobId())
-                    .sourceType(0L) // todo: 0-> file csv
+                    .jobId(jobExecution.getJobId() != null ? jobExecution.getJobId().intValue() : null)
+                    .sourceType(0) // todo: 0-> file csv
                     .userDataSource(file.getOriginalFilename())
                     .build();
 

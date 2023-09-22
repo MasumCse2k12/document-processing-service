@@ -17,11 +17,10 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ErrorLead extends BaseEntity {
-    @Lob
+
     @Column(name = "data")
     private String data;
 
-    @Lob
     @Column(name = "error_desc")
     private String errorDescription;
 

@@ -24,7 +24,7 @@ class CsvApplicationTests {
 
     @Test
     void csvUploadTest() throws IOException, JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException, org.springframework.batch.core.repository.JobRestartException {
-        csvProcessingService.upload(convert("/resources/csv/sample-leads.csv"));
+        csvProcessingService.upload(convert("resources/csv/sample-leads.csv"));
     }
 
     public static MultipartFile convert(String filePath) throws IOException {

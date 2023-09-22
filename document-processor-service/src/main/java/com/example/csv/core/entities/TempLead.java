@@ -25,7 +25,6 @@ public class TempLead extends BaseEntity {
     String phone;
     @Column(name = "reason")
     private String reason;
-    @Lob
     @Column(name = "error")
     private String error;
 }
