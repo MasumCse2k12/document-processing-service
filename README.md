@@ -1,20 +1,6 @@
 
 # document-processing-service
 
-# Requirements:
-- Jdk 8
-- Gradle: https://gradle.org/
-
-# Getting Started
-- Inside "src/main/resources/application.properties" please update server, port, postgres server, user+password credentials
-- Then write the following commands to compile it on your pc.
-- gradle clean
-- gradle build -x test (It will create war/jar file under build/libs folder)
-
-- 
-## Spring Boot CSV Batch Processor
-- This is a Spring Boot web application that reads chunks of CSV data and writes user information (email and phone) to a PostgreSQL database using Spring Batch.
-
 ### Table of Contents
 - Prerequisites
 - Getting Started
@@ -32,7 +18,15 @@ Before you can run this application, you need to have the following installed on
 - PostgreSQL
 - Gradle
 
-### Getting Started
+# Getting Started
+- Inside "src/main/resources/application.properties" please update server, port, postgres server, user+password credentials
+- Then write the following commands to compile it on your pc.
+- gradle clean
+- gradle build -x test (It will create war/jar file under build/libs folder)
+
+## Spring Boot CSV Batch Processor
+- This is a Spring Boot web application that reads chunks of CSV data and writes user information (email and phone) to a PostgreSQL database using Spring Batch.
+
 ### Clone the Repository
 - git clone https://github.com/MasumCse2k12/document-processing-service.git
 - cd your-repo
