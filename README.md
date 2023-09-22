@@ -40,7 +40,7 @@ To run the application, use Gradle:
 bash
 Copy code
 gradle bootRun
-The application will start, and you can access it at http://localhost:8080.
+The application will start, and you can access it at http://localhost:10310/document-processor-service-1.0/swagger-ui.html
 
 Project Structure
 Here's an overview of the project structure:
