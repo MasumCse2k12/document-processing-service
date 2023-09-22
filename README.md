@@ -38,6 +38,9 @@ Before you can run this application, you need to have the following installed on
 
 - The application will start, and you can access it at http://localhost:10310/document-processor-service-1.0/swagger-ui.html
 
+### Documentation
+![image](https://github.com/MasumCse2k12/document-processing-service/assets/12800530/ca7ed390-5720-40f7-b4e3-f353ff355bc9)
+
 ### Project Structure
 
 ![image](https://github.com/MasumCse2k12/document-processing-service/assets/12800530/7db7370e-34b4-4b30-87dd-5701a997cbbc)
@@ -53,7 +56,7 @@ Before you can run this application, you need to have the following installed on
 For further reference, please consider the following sections:
 
 * [Official Apache Gradle documentation] (https://docs.gradle.org/current/samples/index.html)
-* [Spring Boot GRadle Plugin Reference Guide]  (https://docs.spring.io/spring-boot/docs/2.5.4/gradle-plugin/api/)
+* [Spring Boot Gradle Plugin Reference Guide]  (https://docs.spring.io/spring-boot/docs/2.5.4/gradle-plugin/api/)
 * [CSV File Batch Processing] (https://ademola-kazeem.medium.com/how-to-process-large-csv-file-with-spring-batch-cd3ed8f21d09)
 * [Spring Batch] (https://medium.com/@devalerek/spring-batch-retrieve-data-from-the-csv-file-and-save-it-to-database-h2-75a689b7370)
 
